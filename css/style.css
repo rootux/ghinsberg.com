@@ -89,6 +89,12 @@ input {
 	margin-right: 2em;
 }
 
+.slash {
+    background-color: #aed35a !important;
+	margin-right: 0.2em;
+	margin-left: -0.8em;
+}
+
 input::-webkit-input-placeholder {
    color: black !important;
 }
@@ -110,7 +116,7 @@ input:-ms-input-placeholder {
 }
 
 .nameFormGroup {
-	width: 180px;
+	width: 140px;
 }
 
 #datetimepicker1 {
