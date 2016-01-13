@@ -1,33 +1,29 @@
 $(function () {
-    $("#datePickerHidden1").datepicker({
-        onSelect: function (dateText, inst) {
-            var currentDay = inst.currentDay;
-            var currentMonth = inst.currentMonth + 1;
-            var currentYear = inst.currentYear;
-            $('#Field13-1').val(currentMonth);
-            $('#Field13-2').val(currentDay);
-            $('#Field13').val(currentYear);
-        }
-    });
-    $("#calendarButton1").click(function (e) {
-        e.preventDefault();
-        $('#datePickerHidden1').datepicker("show");
-    });
-});
+    var datePickerOptions = {  
+  		format: 'MM/DD/YYYY'
+  	};  
+    
+  	$('#datetimepicker1')
+      .datetimepicker(datePickerOptions)
+      .on('dp.change', function(ev) {
+          var date = ev.date;
+          var day = date.date();
+          var month = date.month() + 1;
+          var year = date.year();
+          $('#date-month-1').val(month);
+          $('#date-day-1').val(day);
+          $('#date-year-1').val(year);
+      });
 
-$(function () {
-    $("#datePickerHidden2").datepicker({
-        onSelect: function (dateText, inst) {
-            var currentDay = inst.currentDay;
-            var currentMonth = inst.currentMonth + 1;
-            var currentYear = inst.currentYear;
-            $('#Field23-1').val(currentMonth);
-            $('#Field23-2').val(currentDay);
-            $('#Field23').val(currentYear);
-        }
-    });
-    $("#calendarButton2").click(function (e) {
-        e.preventDefault();
-        $('#datePickerHidden2').datepicker("show");
-    });
+    $('#datetimepicker2')
+      .datetimepicker(datePickerOptions)
+      .on('dp.change', function(ev) {
+          var date = ev.date;
+          var day = date.date();
+          var month = date.month() + 1;
+          var year = date.year();
+          $('#date-month-2').val(month);
+          $('#date-day-2').val(day);
+          $('#date-year-2').val(year);
+      });
 });
