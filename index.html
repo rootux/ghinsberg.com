@@ -1,204 +1,255 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Motivational Speaker - Yossi Ghinsberg</title>
-    <meta name="description"
-          content="A Motivational Speaker of Extraordinary Inspiration Good motivational speakers are storytellers who have led exceptional lives or learned vital lessons from unusual circumstances.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap styles -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-    <!-- Generic page styles -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" >
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>Motivational Speaker - Yossi Ghinsberg</title>
+        <meta name="description"
+              content="A Motivational Speaker of Extraordinary Inspiration Good motivational speakers are storytellers who have led exceptional lives or learned vital lessons from unusual circumstances.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
-<div class="container-fluid">
+        <link rel="stylesheet" href="styles/structure.css">
+        <link rel="stylesheet" href="styles/form.css" >
+        <link rel="stylesheet" href="styles/theme.css" >
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css"/>
+        <link rel="stylesheet" href="styles/style.css">
 
-<div class="section1">
-    <div class="row">
-        <div class="col-xs-4">
-            <img class='logoTop' alt='Yossi Ghinsberg' src="img/logo.png">
-        </div>
-    </div>
-    <div class="row">
-    	<div class='leftPart'>
-    		<span class='topTagline'>From an epic storyteller comes a keynote that transforms individuals and corporations
-    		</span>
-    		<h2>
-    		Bringing Amazon<br>
-			Survival Skills to<br>
-			Business<br>
-    		</h2>
-    		<p>
-    		Yossi Ghinsberg lives to tell one of the greatest survival stories of our times, his insights for modern business has helped many Fortune 500 companies in shaking stagnant perceptions, moving towards a new viable paradigm, nothing short of transformational for individuals and organizations.
-    		</p>
-        </div>
-        <div class='rightPart'>
-        <a href='https://www.youtube.com/embed/cZM-RzL13sU?rel=0&wmode=transparent&autoplay=1' youtubeLink><img src='img/youtube_play.png' class='youtubePlay'></a>
-        <br>
-        <span><q>“I have never seen a<br> packed room to be so<br> totally absorbed at a<br> convention session in<br> my career.”</q><br>
-        <img src='img/bob_fuller.png' class='bobFuller'>
-        <br>
-        <img src='img/ibm_quote.png'>
-        </span>
-        </div>
-    </div>
-    <div class="row bottomQuote">
-    Yossi’s bestselling book Jungle has sold over a million copies worldwide. 
-    </div>
-</div>
-<div class="section2">
-    <hr>
-    <div class="row">
-    <p>Find out how Yossi can make your event unforgettable.</p>
-    <form class='form-inline'>
-        <div class="form-group nameFormGroup">
-            <label class="sr-only" for="nameTop">Name</label>
-            <input type="text" placeholder="Name" id='nameTop' class="form-control" />
-        </div>
-        <div class="form-group">
-            <label class="sr-only" for="emailTop">Email address</label>
-            <input type="email" class="form-control" id="emailTop" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <div class='col-sm-12 datetimepickerWrapper'>
-                <input type="text" class='form-control' id='datetimepicker1' placeholder="Event Date"/>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/wufoo.js"></script>
+
+        <!--[if lt IE 10]>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+            <div class="section1">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img class='logoTop' alt='Yossi Ghinsberg' src="img/logo.png">
+                    </div>
+                </div>
+                <div class="row">      
+                    <div class='leftPart'>
+                        <span class='topTagline'>From an epic storyteller comes a keynote that transforms individuals and corporations
+                        </span>
+                        <h2>
+                            Bringing Amazon<br>
+                            Survival Skills to<br>
+                            Business<br>
+                        </h2>
+                        <p>
+                            Yossi Ghinsberg lives to tell one of the greatest survival stories of our times, his insights for modern business has helped many Fortune 500 companies in shaking stagnant perceptions, moving towards a new viable paradigm, nothing short of transformational for individuals and organizations.
+                        </p>
+                    </div>
+                    <div class='rightPart'>
+                        <a href='https://www.youtube.com/embed/cZM-RzL13sU?rel=0&wmode=transparent&autoplay=1'><img src='img/youtube_play.png' class='youtubePlay'></a>
+                        <br>
+                        <span><q>“I have never seen a<br> packed room to be so<br> totally absorbed at a<br> convention session in<br> my career.”</q><br>
+                            <img src='img/bob_fuller.png' class='bobFuller'>
+                            <br>
+                            <img src='img/ibm_quote.png'>
+                        </span>
+                    </div>
+                </div>
+                <div class="row bottomQuote">
+                    Yossi’s bestselling book Jungle has sold over a million copies worldwide. 
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Event details/comments" class="form-control" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Check Availability" class='checkAvail' />
-        </div>
-        
-    </form>
-    </div>
-    <hr>
-</div>
-<div class="section3">
-    <div class="row">
-    	<q>
-    		“an injection of much needed oxygen for the sales<br>force and the management team“
-    	</q><br>
-    	<img src='img/bert_wong.png'><br>
-    	<img src='img/fujitsu.png' alt='fujitsu'>
-    </div>
-</div>
-<div class="section4">
-    <div class="row">
-	    <p>IN THE PAST YEARS YOSSI HAS BEEN INVITED TO SPEAK FOR BRANDS IN ALMOST ANY INDUSTRY.</p>
-    </div>
-    <hr class="small">
+            <div class="section2">
+                <hr>
+                <div class="row">
+                    <p>Find out how Yossi can make your event unforgettable.</p>
+                    <form id="form2" name="form2" class="form-inline rightLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" 
+                          action="https://ghinsberg.wufoo.com/forms/m1shzd2p147umvp/#public">
+                        <div class="form-group nameFormGroup">
+                            <label class="sr-only" for="Field8">First Name</label>
+                            <input id="Field8" name="Field8" type="text" placeholder="First" size="8" tabindex="1" class="form-control" required/>
+                        </div>
+                        <div id="foli8" class="form-group nameFormGroup">
+                            <label class="sr-only" for="Field9">Last Name</label>
+                            <input id="Field9" name="Field9" type="text" placeholder="Last" size="8" tabindex="2" class="form-control" required/>
+                        </div>
+                        <div class="form-group dateTimeGroup">
+                            <label class="sr-only" for="Field10">Email address</label>
+                            <input id="Field10" name="Field10" type="email" spellcheck="false" class="form-control" placeholder="Email" maxlength="255" tabindex="3" required/>
+                        </div>      
+                        <div class="form-group">
+                            <div class='col-sm-12 datetimepickerWrapper'>
+                                <input id="Field13-1" name="Field13-1" type="text" class='form-control' placeholder="Month" size="2" maxlength="2" tabindex="4" required/>
+                            </div>
+                        </div>
+                        <div class="form-group monthDayGroup">
+                            <div class='col-sm-12 datetimepickerWrapper'>
+                                <input id="Field13-2" name="Field13-2"  type="text" class='form-control' placeholder="Day" size="2" maxlength="2" tabindex="5" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class='col-sm-12 datetimepickerWrapper'>
+                                <input id="Field13" name="Field13" type="text" class='form-control' style="margin-right: 0px"  placeholder="Year" size="4" maxlength="4" tabindex="6" required />
+                            </div>
+                        </div>
+                        <div id="cal13" class="form-group">
+                            <input id="datePickerHidden1" type="hidden"/>
+                            <a id="calendarButton1" href="#">
+                                <img class="datepicker" src="img/calendar.png" alt="Pick a date." data-date-format="yyyy-mm-dd" data-date="2016-01-12" />
+                            </a>
+                        </div>
 
-    <div class="row">
-        <img src='img/bmw.png'>
-        <img src='img/png.png'>
-        <img src='img/microsoft.png'>
-        <img src='img/qantas.png'>
-        <img src='img/hp.png'>
-        <img src='img/motorola.png'>
-        <br>
-        <img src='img/ibm.png'>
-        <img src='img/americanexpress.png'>
-        <img src='img/cocacola.png'>
-        <img src='img/bp.png'>
-        <img src='img/hilton.png'>
-        <img src='img/citi.png'> 
-    </div>
-</div>
-<div class="section5">
-    <div class="row">
-        <p>
-        	Event Organizers - you want a keynote that will generate a ‘Big Wow’ to set the tone for the entire conference - <br>
-    a keynote that will be remembered.
-        </p>
-        <h3>
-        YOSSI IS RATED THE MOST UNFORGETTABLE<br>
-        SPEAKER IN THE INDUSTRY.
-        </h3>
-    </div>
-</div>
-<div class="section6">
-    <div class="row">
-	    <div class='col-sm-6'>
-	    	<img src='img/yossi2.png' class='yossi2'>
-	    </div>
-	 	<div class='col-sm-5 paradigm'>
-        <br><br><br><br>
-	 		<p>Yossi’s paradigm shifting theory has been developed first hand through his experiences, and been implemented and tested first and foremost in his own life - A graduate of philosophy and business administration from Tel Aviv University, a tech entrepreneur in the heart of Silicon Valley, VP of a medical corporation introducing groundbreaking treatment of opiate addiction, the visionary behind the most celebrated resort in the Bolivian Amazon.
-	 		<br><br>
-	 		Yossi met world leaders and cooperated with global institutes and organizations, he shared the stage with celebrities such as Bill Clinton, Richard Branson, Wayne Dyre and many more. His books sold millions of copies globally, and his amazing story aired as a docudrama on Discovery Channel and is now being produced as a major motion picture.
-	 		</p>
-	 	</div>
-    </div>
-</div>
-<div class="section7">
-    <hr>
-    <div class="row">
-	    <q>
-	    “Every once in awhile one is privileged to be part of something very, very special and this was certainly one of those times.“
-	    </q><br>
-	    <img src='img/gilbertAnoka.png'><br>
-	    <img src='img/allblacks.png'>
-    </div>
-</div>
-<div class="section8">
-	    <p>Find out how Yossi can make your event unforgettable.
-	    </p>
-
-	    <form class='form-inline'>
-        <div class="form-group nameFormGroup">
-            <label class="sr-only" for="nameBottom">Name</label>
-            <input type="text" placeholder="Name" id='nameBottom' class="form-control" />
-        </div>
-        <div class="form-group">
-            <label class="sr-only" for="emailBottom">Email address</label>
-            <input type="email" class="form-control" id="emailBottom" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <div class='col-sm-12 datetimepickerWrapper'>
-                <input type="text" class='form-control' id='datetimepicker2' placeholder="Event Date"/>
+                        <div class="form-group">
+                            <input  id="Field14" name="Field14" type="text" placeholder="Event details/comments" class="form-control" tabindex="7"/>
+                        </div>
+                        <div class="form-group">
+                            <input id="saveForm" name="saveForm" type="submit" value="Check Availability" class='checkAvail' />
+                        </div>
+                        <input type="hidden" id="idstamp" name="idstamp" value="b6ISvzzxZ0d7snMASFflF4GRg0A1LraxyG1SeJJShvs=" />
+                    </form>
+                </div>
+                <hr>
             </div>
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Event details/comments" class="form-control" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Check Availability" class='checkAvail' />
-        </div>
-        
-    </form>
-		
-		<hr>
-</div>
-<div class="section9">
+            <div class="section3">
+                <div class="row">
+                    <q>
+                        “an injection of much needed oxygen for the sales<br>force and the management team“
+                    </q><br>
+                    <img src='img/bert_wong.png'><br>
+                    <img src='img/fujitsu.png' alt='fujitsu'>
+                </div>
+            </div>
+            <div class="section4">
+                <div class="row">
+                    <p>IN THE PAST YEARS YOSSI HAS BEEN INVITED TO SPEAK FOR BRANDS IN ALMOST ANY INDUSTRY.</p>
+                </div>
+                <hr class="small">
 
-    <div class="row">
-        <div class="col-xs-4">
-            <img class='logoBottom' alt='Yossi Ghinsberg' src="img/logo.png">
-        </div>
-    </div>
+                <div class="row">
+                    <img src='img/bmw.png'>
+                    <img src='img/png.png'>
+                    <img src='img/microsoft.png'>
+                    <img src='img/qantas.png'>
+                    <img src='img/hp.png'>
+                    <img src='img/motorola.png'>
+                    <br>
+                    <img src='img/ibm.png'>
+                    <img src='img/americanexpress.png'>
+                    <img src='img/cocacola.png'>
+                    <img src='img/bp.png'>
+                    <img src='img/hilton.png'>
+                    <img src='img/citi.png'> 
+                </div>
+            </div>
+            <div class="section5">
+                <div class="row">
+                    <p>
+                        Event Organizers - you want a keynote that will generate a ‘Big Wow’ to set the tone for the entire conference - <br>
+                        a keynote that will be remembered.
+                    </p>
+                    <h3>
+                        YOSSI IS RATED THE MOST UNFORGETTABLE<br>
+                        SPEAKER IN THE INDUSTRY.
+                    </h3>
+                </div>
+            </div>
+            <div class="section6">
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <img src='img/yossi2.png' class='yossi2'>
+                    </div>
+                    <div class='col-sm-5 paradigm'>
+                        <br><br><br><br>
+                        <p>Yossi’s paradigm shifting theory has been developed first hand through his experiences, and been implemented and tested first and foremost in his own life - A graduate of philosophy and business administration from Tel Aviv University, a tech entrepreneur in the heart of Silicon Valley, VP of a medical corporation introducing groundbreaking treatment of opiate addiction, the visionary behind the most celebrated resort in the Bolivian Amazon.
+                            <br><br>
+                            Yossi met world leaders and cooperated with global institutes and organizations, he shared the stage with celebrities such as Bill Clinton, Richard Branson, Wayne Dyre and many more. His books sold millions of copies globally, and his amazing story aired as a docudrama on Discovery Channel and is now being produced as a major motion picture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section7">
+                <hr>
+                <div class="row">
+                    <q>
+                        “Every once in awhile one is privileged to be part of something very, very special and this was certainly one of those times.“
+                    </q><br>
+                    <img src='img/gilbertAnoka.png'><br>
+                    <img src='img/allblacks.png'>
+                </div>
+            </div>
+            <div class="section8">
+                <p>Find out how Yossi can make your event unforgettable.
+                </p>
 
-    <hr class="greyhr">
-    <div class="row">
-        <p class='copyright'>Copyright Yossi Ghinsberg. Website by Gal Bracha</p>
-        <div class='social'>
-        	<img src='img/fb.png'>
-        	<img src='img/twitter.png'>
-            <img src='img/rss.png'>
-            <img src='img/tumblr.png'>
-        </div>
-    </div>
+                <form id="form3" name="form3" class="form-inline rightLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" 
+                      action="https://ghinsberg.wufoo.com/forms/m1shzd2p147umvp/#public">
+                    <div class="form-group nameFormGroup">
+                        <label class="sr-only" for="Field20">First Name</label>
+                        <input id="Field20" name="Field8" type="text" placeholder="First" size="8" tabindex="10" class="form-control" required/>
+                    </div>
+                    <div id="foli8" class="form-group nameFormGroup">
+                        <label class="sr-only" for="Field21">Last Name</label>
+                        <input id="Field21" name="Field9" type="text" placeholder="Last" size="8" tabindex="11" class="form-control" required/>
+                    </div>
+                    <div class="form-group dateTimeGroup">
+                        <label class="sr-only" for="Field22">Email address</label>
+                        <input id="Field22" name="Field10" type="email" spellcheck="false" class="form-control" placeholder="Email" maxlength="255" tabindex="12" required/>
+                    </div>      
+                    <div class="form-group">
+                        <div class='col-sm-12 datetimepickerWrapper'>
+                            <input id="Field23-1" name="Field13-1" type="text" class='form-control' placeholder="Month" size="2" maxlength="2" tabindex="13" required/>
+                        </div>
+                    </div>
+                    <div class="form-group monthDayGroup">
+                        <div class='col-sm-12 datetimepickerWrapper'>
+                            <input id="Field23-2" name="Field13-2"  type="text" class='form-control' placeholder="Day" size="2" maxlength="2" tabindex="14" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class='col-sm-12 datetimepickerWrapper'>
+                            <input id="Field23" name="Field13" type="text" class='form-control' style="margin-right: 0px"  placeholder="Year" size="4" maxlength="4" tabindex="15" required />
+                        </div>
+                    </div>
+                    <input id="datePickerHidden2" type="hidden"/>
+                    <a id="calendarButton2" href="#">
+                        <img class="datepicker" src="img/calendar.png" alt="Pick a date." data-date-format="yyyy-mm-dd" data-date="2016-01-12" />
+                    </a>
 
-</div>
-</body>
+                    <div class="form-group">
+                        <input  id="Field24" name="Field14" type="text" placeholder="Event details/comments" class="form-control" tabindex="16"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="saveForm" name="saveForm" type="submit" value="Check Availability" class='checkAvail' />
+                    </div>
+                    <input type="hidden" id="idstamp" name="idstamp" value="b6ISvzzxZ0d7snMASFflF4GRg0A1LraxyG1SeJJShvs=" />
+                </form>
+                <hr>
+            </div>
+            <div class="section9">
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img class='logoBottom' alt='Yossi Ghinsberg' src="img/logo.png">
+                    </div>
+                </div>
+
+                <hr class="greyhr">
+                <div class="row">
+                    <p class='copyright'>Copyright Yossi Ghinsberg. Website by Gal Bracha</p>
+                    <div class='social'>
+                        <img src='img/fb.png'>
+                        <img src='img/twitter.png'>
+                        <img src='img/rss.png'>
+                        <img src='img/tumblr.png'>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </body>
 </html>
