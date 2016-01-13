@@ -8,15 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap styles -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
     <!-- Generic page styles -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="structure.css">
+	<link rel="stylesheet" href="form.css" >
+    <link rel="stylesheet" href="theme.css" >
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css"/>
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" >
+    <script src="wufoo.js"></script>
+
+<!--[if lt IE 10]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 <body>
 
@@ -28,7 +36,7 @@
             <img class='logoTop' alt='Yossi Ghinsberg' src="img/logo.png">
         </div>
     </div>
-    <div class="row">
+    <div class="row">      
     	<div class='leftPart'>
     		<span class='topTagline'>From an epic storyteller comes a keynote that transforms individuals and corporations
     		</span>
@@ -59,27 +67,49 @@
     <hr>
     <div class="row">
     <p>Find out how Yossi can make your event unforgettable.</p>
-    <form class='form-inline'>
+   <form id="form2" name="form2" class="form-inline rightLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" 
+      action="https://ghinsberg.wufoo.com/forms/m1shzd2p147umvp/#public">
         <div class="form-group nameFormGroup">
-            <label class="sr-only" for="nameTop">Name</label>
-            <input type="text" placeholder="Name" id='nameTop' class="form-control" />
+            <label class="sr-only" for="Field8">First Name</label>
+            <input id="Field8" name="Field8" type="text" placeholder="First" size="8" tabindex="1" class="form-control" required/>
         </div>
-        <div class="form-group">
-            <label class="sr-only" for="emailTop">Email address</label>
-            <input type="email" class="form-control" id="emailTop" placeholder="Email">
+        <div id="foli8" class="form-group nameFormGroup">
+             <label class="sr-only" for="Field9">Last Name</label>
+            <input id="Field9" name="Field9" type="text" placeholder="Last" size="8" tabindex="2" class="form-control" required/>
         </div>
+        <div class="form-group dateTimeGroup">
+            <label class="sr-only" for="Field10">Email address</label>
+            <input id="Field10" name="Field10" type="email" spellcheck="false" class="form-control" placeholder="Email" maxlength="255" tabindex="3" required/>
+        </div>      
         <div class="form-group">
             <div class='col-sm-12 datetimepickerWrapper'>
-                <input type="text" class='form-control' id='datetimepicker1' placeholder="Event Date"/>
+                <input id="Field13-1" name="Field13-1" type="text" class='form-control' placeholder="Month" size="2" maxlength="2" tabindex="4" required/>
+            </div>
+        </div>
+        <div class="form-group monthDayGroup">
+            <div class='col-sm-12 datetimepickerWrapper'>
+                <input id="Field13-2" name="Field13-2"  type="text" class='form-control' placeholder="Day" size="2" maxlength="2" tabindex="5" required />
             </div>
         </div>
         <div class="form-group">
-            <input type="text" placeholder="Event details/comments" class="form-control" />
+            <div class='col-sm-12 datetimepickerWrapper'>
+                <input id="Field13" name="Field13" type="text" class='form-control'style="margin-right: 0px"  placeholder="Year" size="4" maxlength="4" tabindex="6" required />
+            </div>
+        </div>
+        <div id="cal13" class="form-group">
+            <input id="datePickerHidden1" type="hidden"/>
+            <a id="calendarButton1" href="#">
+			     <img class="datepicker" src="img/calendar.png" alt="Pick a date." data-date-format="yyyy-mm-dd" data-date="2016-01-12" />
+            </a>
+		</div>
+        
+        <div class="form-group">
+            <input  id="Field14" name="Field14" type="text" placeholder="Event details/comments" class="form-control" tabindex="7"/>
         </div>
         <div class="form-group">
-            <input type="submit" value="Check Availability" class='checkAvail' />
+            <input id="saveForm" name="saveForm" type="submit" value="Check Availability" class='checkAvail' />
         </div>
-        
+        <input type="hidden" id="idstamp" name="idstamp" value="b6ISvzzxZ0d7snMASFflF4GRg0A1LraxyG1SeJJShvs=" />
     </form>
     </div>
     <hr>
@@ -155,7 +185,50 @@
 	    <p>Find out how Yossi can make your event unforgettable.
 	    </p>
 
-	    <form class='form-inline'>
+ <form id="form3" name="form3" class="form-inline rightLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" 
+      action="https://ghinsberg.wufoo.com/forms/m1shzd2p147umvp/#public">
+        <div class="form-group nameFormGroup">
+            <label class="sr-only" for="Field20">First Name</label>
+            <input id="Field20" name="Field8" type="text" placeholder="First" size="8" tabindex="10" class="form-control" required/>
+        </div>
+        <div id="foli8" class="form-group nameFormGroup">
+             <label class="sr-only" for="Field21">Last Name</label>
+            <input id="Field21" name="Field9" type="text" placeholder="Last" size="8" tabindex="11" class="form-control" required/>
+        </div>
+        <div class="form-group dateTimeGroup">
+            <label class="sr-only" for="Field22">Email address</label>
+            <input id="Field22" name="Field10" type="email" spellcheck="false" class="form-control" placeholder="Email" maxlength="255" tabindex="12" required/>
+        </div>      
+        <div class="form-group">
+            <div class='col-sm-12 datetimepickerWrapper'>
+                <input id="Field23-1" name="Field13-1" type="text" class='form-control' placeholder="Month" size="2" maxlength="2" tabindex="13" required/>
+            </div>
+        </div>
+        <div class="form-group monthDayGroup">
+            <div class='col-sm-12 datetimepickerWrapper'>
+                <input id="Field23-2" name="Field13-2"  type="text" class='form-control' placeholder="Day" size="2" maxlength="2" tabindex="14" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class='col-sm-12 datetimepickerWrapper'>
+                <input id="Field23" name="Field13" type="text" class='form-control'style="margin-right: 0px"  placeholder="Year" size="4" maxlength="4" tabindex="15" required />
+            </div>
+        </div>
+        <input id="datePickerHidden2" type="hidden"/>
+            <a id="calendarButton2" href="#">
+			     <img class="datepicker" src="img/calendar.png" alt="Pick a date." data-date-format="yyyy-mm-dd" data-date="2016-01-12" />
+            </a>
+        
+        <div class="form-group">
+            <input  id="Field24" name="Field14" type="text" placeholder="Event details/comments" class="form-control" tabindex="16"/>
+        </div>
+        <div class="form-group">
+            <input id="saveForm" name="saveForm" type="submit" value="Check Availability" class='checkAvail' />
+        </div>
+        <input type="hidden" id="idstamp" name="idstamp" value="b6ISvzzxZ0d7snMASFflF4GRg0A1LraxyG1SeJJShvs=" />
+    </form>
+
+	   <!-- <form class='form-inline'>
         <div class="form-group nameFormGroup">
             <label class="sr-only" for="nameBottom">Name</label>
             <input type="text" placeholder="Name" id='nameBottom' class="form-control" />
@@ -176,7 +249,7 @@
             <input type="submit" value="Check Availability" class='checkAvail' />
         </div>
         
-    </form>
+    </form>-->
 		
 		<hr>
 </div>
