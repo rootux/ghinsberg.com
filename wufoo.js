@@ -162,32 +162,3 @@ function addEvent( obj, type, fn ) {
     obj.addEventListener( type, fn, false );	
   }
 }
-
-function indexDatePicker(ev) {
-  var newDate = new Date(ev.date);
-  var mo = padNumberArray(newDate.getMonth() + 1, 2);
-  var day = padNumberArray(newDate.getDate(), 2);
-  var year = padNumberArray(newDate.getFullYear(), 4);
-  if ($(this).data('date-format') === 'yyyy-mm-dd') {
-    if ($field1.val() !== mo) {
-      $field1.val(mo).trigger('change');
-    }
-    if ($field2.val() !== day) {
-      $field2.val(day).trigger('change');
-    }
-    if ($field3.val() !== year) {
-      $field3.val(year).trigger('change');
-    }
-  } else {
-    if ($field1.val() !== day) {
-      $field1.val(day).trigger('change');
-    }
-    if ($field2.val() !== mo) {
-      $field2.val(mo).trigger('change');
-    }
-    if ($field3.val() !== year) {
-      $field3.val(year).trigger('change');
-    }
-  }
-  $(this).datepicker('hide')
-}

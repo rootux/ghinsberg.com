@@ -119,6 +119,14 @@ input:-ms-input-placeholder {
 	width: 140px;
 }
 
+.dateTimeGroup {
+	width: 180px;
+}
+
+.monthDayGroup{
+    width: 56px;
+}
+
 #datetimepicker1 {
 	width: 9em;
 	background-image: url('img/calendar.png');
@@ -129,7 +137,7 @@ input:-ms-input-placeholder {
 }
 
 .form-group {
-	margin-right: 1em;
+	margin-right:  0.1em;
 }
 
 .datetimepickerWrapper {
