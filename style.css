@@ -13,6 +13,7 @@ hr {
 
 .section1 {
 	background: url('img/section1_background.png') no-repeat;
+    background-size: cover;
 	margin-bottom: 2em;
 	color: white;
 }
@@ -64,6 +65,7 @@ q {
 
 .section2 {
 	background: url('img/testimonial_bg.png') no-repeat;
+    background-size: cover;
 }
 .section2 p {
 	color: white;
@@ -156,6 +158,7 @@ input:-ms-input-placeholder {
 	display: block;
 	font-size: 2em;
 	background: url('img/testimonial1_bg.png') no-repeat;
+    background-size: cover;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -225,6 +228,7 @@ input:-ms-input-placeholder {
 
 .section8 {
 	background: url('img/testimonial_bg.png') no-repeat;
+    background-size: cover;
 }
 
 .section8 p {
