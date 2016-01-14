@@ -292,3 +292,14 @@ input:-ms-input-placeholder {
     background: linear-gradient(to bottom, rgba(175,211,90,1) 0%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afd35a', endColorstr='#000000', GradientType=0 );
 }
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px #aed35a inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: black;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px #aed35a inset;
+    -webkit-text-fill-color: black;
+} 
