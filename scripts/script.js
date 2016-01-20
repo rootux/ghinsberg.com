@@ -26,4 +26,16 @@ $(function () {
           $('#date-day-2').val(day);
           $('#date-year-2').val(year);
       });
+
+    $('#form2').submit(function(e) {
+      $('#saveForm').css('cursor','wait');
+      $('body').css('cursor','wait');
+      return true;
+    });
+
+    $('#form3').submit(function(e) {
+      $('#saveForm').css('cursor','wait');
+      $('body').css('cursor','wait');
+      return true;
+    });
 });
